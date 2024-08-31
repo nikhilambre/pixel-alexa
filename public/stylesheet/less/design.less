@@ -1,0 +1,1234 @@
+//
+//      Theme Pixel Alexa
+//      Designed by PixelCoders
+//      Theme Pixel Alexa - Version 1.1 (2014)
+//______________________________________________________________
+
+
+@import "classes";
+@import "mixins";
+@import "variables";
+
+
+.home{
+    .main-body{
+
+
+//      Designing for section header
+//_____________________________________________________
+
+        .header{
+            .boxgallery{
+                .panel{
+                    .bg(@t);
+                    img{
+                    }
+                }
+            }
+
+            .bg-img{
+                .single-image{
+                    width: 100% !important;
+                }
+            }
+
+            .head-bar{
+                position: relative;
+                z-index: 1100;
+
+                .header-top{
+                   
+                    .header-left{
+                        .logo{
+                            width: 150px;
+                            height: auto;
+                        }
+                    }
+                    .header-right{
+                        padding-right: 5%;
+                        ul{
+                            margin-top: 20px !important;
+                            li{
+                                .bg(@b-dark);
+                                height: 53px;
+                                width: 53px;
+                                padding-top: 7%;
+                                border-radius: 50%;
+                                display: inline-block !important;
+
+                                a{
+                                    i{
+                                        color: @w !important;
+                                        font-size: 1.6em;
+                                    }                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header-text{
+                .bg(@b-light);
+                width: 100%;
+                height: 100%;
+                padding: 20px !important;
+                .box-shadow(@shadow-outer-gray);
+
+                h1{
+                    width: 60%;
+                    z-index: 1100;
+                    font-weight: 100 !important;
+                    letter-spacing: -4px;
+                    margin: 16% 0 0 20%;
+                    font-size: 7em !important;
+                    font-family: @font-family-3 !important;
+                    line-height: 1.2em !important;
+                    color: @w !important;
+                    text-shadow: 2px 2px 6px #333;
+                }
+                h3{
+                    width: 80% !important;
+                    margin-left: 10% !important;
+                    color: @gray-light4 !important;
+                    font-size: 1.5em !important;
+                    text-shadow: 2px 2px 3px #333;
+                    margin-bottom: 40px !important;
+                }
+                .header-button{
+                    font-size: 20px;
+                    padding: 15px 40px;
+                    border: 1px solid @w;
+                    border-radius: 6px; 
+                    color: @w !important;
+                    .transition(@transition-2);
+
+                    &:hover{
+                        .bg(@b-light);
+                    }
+                }
+            }
+
+            .trigger{
+                i{
+                    font-size: 1.8em;
+                    &:hover{
+                    }
+                }
+            }
+        }
+
+
+//      Designing for section head
+//_____________________________________________________
+
+        .section-head{
+            padding: 0 !important;
+
+            .navbar{
+                .bg(@w-dark);
+                border-color: @b;
+                .box-shadow(@shadow-outer-gray);
+
+                .navbar-header{
+                    padding: 0 !important;
+                    height: 70px !important;
+
+                    .navbar-toggle{
+                        margin: 5% 10% 0 0;
+
+                        .icon-bar{
+                        }
+                    }
+                    .navbar-brand{
+                        padding: 0;
+
+                        img{
+                            display: block;
+                            width: 100px;
+                            margin: -10px 0 0 20px;
+                        }
+                    }
+                }
+                .navbar-collapse{
+                    max-height: 100%;
+
+                    .navbar-nav{
+                        li{
+                            .transition(@transition-2);
+
+                            &:hover{
+                                .bg(@b-dark);
+                            }
+                            &:hover>a{
+                                color: @w !important;
+                            }
+
+                            a{
+                                color: @b !important;
+                                .transition(@transition-1);
+                                font-size: 18px;
+                                padding: 25px 20px !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mobile-header{
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+
+                h1{
+                    color: @color4;
+                    font-size: 4em !important;
+                    font-family: @font-family-2 !important;
+                    line-height: 1.1em !important;
+                    margin-bottom: 70px;
+                }
+
+                h3{
+                    color: @color2;
+                    text-shadow: none;
+                    font-weight: 100 !important;
+                    font-size: 1.1em !important;
+                    margin-bottom: 40px;
+                }
+                .header-button{
+                    font-size: 1em;
+                    padding: 12px 30px;
+                    border: 1px solid @w;
+                    border-radius: 6px; 
+                    color: @w !important;
+                    .transition(@transition-2);
+
+                    &:active{
+
+                    }
+                }
+            }
+        }
+
+
+//      Designing for section about
+//_____________________________________________________
+
+        .section-about{
+            .about-section1{
+                .left{
+                    h2{
+                        font-size: 6em;
+                        font-family: @font-family-2 !important;
+                        margin-left: 20%;
+                    }
+                    h4{
+                        line-height: 1.3em !important;
+                    }
+                    p{
+                    }
+                }
+
+                .right{
+                    img{
+                        padding-top: 40px !important;
+                    }
+                }
+            }
+
+            .about-tagline{
+                .bg(@gray-light4);
+                h2{
+                    width: 80%;
+                    margin-left: 10%;
+                    font-size: 2em !important;
+                }
+            }
+
+            .about-section2{
+                background-image: url('../../images/img178_2.jpg');
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-attachment: fixed;
+
+                .section2-cover{
+                    background: -webkit-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);
+                    background: -moz-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);
+                    background: -ms-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);
+                    background: radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);
+                    padding-bottom: 0 !important;
+
+                    img{
+                        width: 70%;
+                        margin-left: 15%;
+                    }
+
+                    h2{
+                        font-size: 6em;
+                        color: @w !important;
+                        font-family: @font-family-2 !important;
+                        font-weight: 100;
+                        text-shadow: none !important;
+                    }
+                    p{
+                        color: @w !important;
+                    }
+                }
+            }
+            .about-section3{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+
+//      Designing for section tabs
+//_____________________________________________________
+
+        .section-tabs{
+            .tabs{
+                nav{
+                    margin-bottom: 60px !important;
+                    ul{
+                        li{
+                            .bg(@b-dark);
+
+                            a{
+                                color: @w !important;
+                                font-family: @font-family-3;
+                                span{
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content{
+                    .bg(@b-dark);
+                    width: 80%;
+                    margin: 60px 60px 0 10%;
+                    padding: 0 !important;
+
+                    #section-1, #section-3{
+                        p{
+                            width: 80%;
+                            margin-left: 10%;
+                        }
+                    }   
+
+                    section{
+                        i{
+                            font-size: 6em;
+                            margin: 40px 0;
+                        }
+                        h3{
+                            margin-bottom: 20px !important;
+                            padding-bottom: 10px;
+                            color: @w !important;
+                            text-shadow: 1px 1px 2px @gray !important;
+                        }
+                        p{
+                            color: @w !important;                            
+                        }
+                    }
+                }
+            }
+        }
+
+
+//      Designing for section services
+//_____________________________________________________
+
+        .section-services{
+            .bg(@w);
+            padding-bottom: 0 !important;
+
+            .two-box{
+                .hi-icon-wrap{
+                    .box-cover{
+                        .box{
+                            margin-bottom: 40px !important;
+                            .bg(@w);
+                            
+                            .hi-icon {
+                                box-shadow: 0 0 0 4px @w;
+
+                                &:after {
+                                    .bg(@b-dark);
+                                }
+
+                                &:hover {
+
+                                    &:before{
+                                        color: @w !important;
+                                        border-radius: 50%;
+                                    }
+                                }
+                            }
+
+                            h3{
+                                margin-top: 0 !important;
+                                font-family: @font-family-2 !important;
+                            }
+                            p{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }        
+
+
+//      Designing for section parallax
+//_____________________________________________________
+
+        .section-parallax{
+            .story{
+                .photograph{
+
+                }
+                article{
+                    .bg(@b-dark);
+
+                    h2{
+                        color: @color4;
+                        font-size: 1.8em !important;
+                        border-bottom: 1px solid @color4;
+                    }
+                    .textbox{
+                        
+                    }
+                }
+            }
+        }
+
+
+//      Designing for section team
+//_____________________________________________________
+
+        .section-team{
+            padding-bottom: 0 !important;
+            .team{
+                position: relative;
+                .team-box{
+                    margin-bottom: 40px;
+
+                    img{
+                        width: 70%;
+                        margin-left: 15% !important;
+                        margin-bottom: 20px;
+                    }
+                    h4{
+                        font-size: 1.4em !important;
+                    }
+                    p{
+                        width: 80%;
+                        margin-left: 10%;
+                    }
+                    ul{
+                        .center();
+                        li{
+                            height: 36px;
+                            width: 36px;
+                            border-radius: 50%;
+                            padding-top: 7px;
+
+                            i{
+                                color: @w;
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+
+            }
+            .ceo{
+                .bg(@gray-light4);
+
+                img{
+                    width: 80%;
+                    margin-left: 10%;
+                    margin-bottom: 20px;
+                }
+
+                .right{
+                    padding: 20px 40px;
+                    p{
+
+                    }
+                    blockquote{
+                        p{
+                        }
+                        small{
+                            cite{
+                            }
+                        }
+                    }
+                }              
+            }
+        }
+
+
+//      Designing for section product
+//_____________________________________________________
+
+        .section-product{
+            .bg(@w);
+            
+            .product-cover{
+                padding-bottom: 0 !important;
+
+                .panel-group{
+                    margin-top: 40px !important;
+                    .panel{
+                        margin-top: 0px !important;
+                        border: none;
+                        border-bottom: 1px solid @gray-light3;
+
+                        .panel-heading{
+                            
+                            h4{
+                                font-size: 2em;
+                                font-family: @font-family-2 !important;
+
+                                span{
+                                    font-family: @font-family-3 !important;
+                                    color: @color2;
+                                }
+
+                                small{
+                                    color: @color2;
+                                }
+
+                                a{
+                                    display: block;
+                                    padding: 30px 0;
+                                }   
+                            }
+                        }
+                        .panel-collapse{
+                            .panel-body{
+                                border: none;
+
+                                img{
+                                    width: 100% !important;
+                                }
+                                h2{
+                                    font-family: @font-family-2 !important;
+                                    margin-bottom: 20px;
+                                }
+                                .tag-line{
+                                }
+                                p{
+
+                                }
+                                a{}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+//      Designing for section portfolio
+//_____________________________________________________
+
+        .section-portfolio{
+            padding-bottom: 0 !important;
+
+            h2{}
+
+            .grid{
+                figure.effect-marley{
+                    overflow: hidden;
+                    padding: 10px;
+                    .bg(@gray-light4);
+                    display: inline-block !important;
+
+                        &:hover img{
+                            opacity: 1 !important;
+                            -webkit-transform: scale(1.1);
+                            -moz-transform: scale(1.1);
+                            -ms-transform: scale(1.1);
+                            -o-transform: scale(1.1);
+                            transform: scale(1.1);
+                            -webkit-transition-duration: 0.5s;
+                            -moz-transition-duration: 0.5s;
+                            -ms-transition-duration: 0.5s;
+                            -o-transition-duration: 0.5s;
+                            transition-duration: 0.5s;
+                        }
+
+                    img{
+                        width: 100%;
+                        .transition(@transition-4);
+                    }
+                    figcaption{
+                        h2{
+                            font-size: 1.5em !important;
+                            color: @w;
+                            text-shadow: none;
+                            font-family: @font-family-3;
+                            font-weight: 500;
+
+                            span{
+                                font-family: @font-family-2;
+                                font-weight: 100;
+                            }
+                        }
+                        p{
+                            color: @w;
+                        }
+                        a{}
+                    }
+                }
+            }
+
+        }
+
+
+//      Designing for section testimonial
+//_____________________________________________________
+
+        .section-testimonial{
+            .bg(@gray-light4);
+            padding-bottom: 0 !important;
+
+            .carousel{
+                .carousel-inner{
+                    padding-bottom: 80px !important;
+
+                    .item{
+                        img{
+                            margin: 10px 0 20px 43%;
+                            width: 17%;
+                        }
+                        h3{
+                            color: @b !important;
+                            width: 80%;
+                            font-size: 20px !important;
+                            margin-left: 10%;
+                            text-shadow: 1px 1px 2px @w;
+
+                            i{
+                            }
+                        }
+                        p{
+                            color: @gray !important;
+                            margin: 40px 10% 0 0;
+                        }
+                    }
+                }
+
+                .carousel-indicators{
+                    li{
+                        background: rgba(150,150,150,0.1);
+                        margin: 6px;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        -ms-transition: all 0.2s;
+                        -o-transition: all 0.2s;
+                        transition: all 0.2s;
+                        box-shadow: 0 1px 1px rgba(255,255,255,0.6), inset 0 1px 1px rgba(0,0,0,0.4), 0 0 0 2px rgba(255,255,255,0.7);
+                    }
+                    li.active{
+                        box-shadow: 0 1px 1px rgba(255,255,255,0.6), inset 0 1px 1px rgba(0,0,0,0.4), 0 0 0 5px rgba(255,255,255,0.7); 
+                    }
+                }
+            }
+        }
+
+
+//      Designing for section clients
+//_____________________________________________________
+
+        .section-clients{
+
+            background-image: url('../../images/img113_1.jpg');
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+
+            .client-cover{
+                background: -webkit-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);
+                background: -moz-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);
+                background: -ms-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);
+                background: radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);                    
+
+                .clients-list{
+                    padding-bottom: 0 !important;
+                    img{
+                        margin-bottom: 60px !important;
+                        width: 180px;
+                    }
+                }
+            }
+
+        }
+
+
+//      Designing for section contact
+//_____________________________________________________
+
+        .section-contact{
+            padding-bottom: 0 !important;
+            .contact-addr{
+                padding-bottom: 0 !important;
+                .addr-box{
+                    padding: 0 !important;
+
+                    i{
+                        padding-bottom: 20px !important;
+                    }
+                    .fa-mobile{
+                        padding-bottom: 5px !important;
+                    }
+                    p{
+                        color: @gray-light1;
+                        span{
+                            color: @gray;
+                            font-size: 27px !important;
+                        }
+                    }
+                }
+            }
+
+            .form-contact{
+                background-image: url(../../images/word_map.png);
+                background-size: cover; 
+                background-repeat: no-repeat;
+                background-position: 0px -40px;
+
+                .contact-form{
+                    .input-group{
+                        input, textarea{
+                            padding-left: 64px;
+                            border-radius: 3px;
+                            border-color: @gray;
+                            color: @gray !important;
+                            .bg(@t);
+                        }
+                        i{
+                            display: block;
+                            width: 64px;
+                            position: absolute;
+                            top: 0;
+                            left: 5px;
+                            font-size: 24px;
+                            line-height: 52px;
+                            text-align: center;
+                            font-weight: 300;
+                            -webkit-transition: color .3s ease-out;
+                            transition: color .3s ease-out;                    
+                        }                        
+                        .btn{
+                            width: 100%;
+                            border-radius: 3px;
+                            .transition(@transition-2);
+                        }
+                    }
+                }
+            }
+
+            .contact-social{
+                .facebook, .twitter, .google{
+                    padding: 30px;
+                    border-right: 3px solid @w;
+                    .bg(@gray-light5);
+                    .transition(@transition-2);
+
+                    i{
+                        line-height: 60px !important;
+                    }
+
+                    span{
+                        color: @t;
+                        .transition(@transition-2);
+                    }   
+
+                    &:hover>span{
+                        color: @w;
+                    }
+                }
+                .facebook{
+                    color: #3b5998;
+
+                    &:hover{
+                       .bg(#3b5998);
+                       color: @w;
+                    }
+                }
+                .twitter{
+                    color: #55acee;
+                    &:hover{
+                       .bg(#55acee);
+                       color: @w;
+                    }                    
+                }
+                .google{
+                    color: #dd4b39;
+                    &:hover{
+                       .bg(#dd4b39);
+                       color: @w;
+                    }                       
+                }
+            }            
+        }
+
+
+//      Designing for section footer
+//_____________________________________________________
+
+        .footer{
+        }
+   
+
+    }
+
+
+//      Designing for Demo page
+//____________________________________________________
+
+    .demo-body{
+        .section-1{
+            background-image: url('../../images/img178_2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+
+            .section-1-cover{
+                background: -webkit-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);
+                background: -moz-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);
+                background: -ms-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);
+                background: radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.8) 100%);                
+
+                h1{
+                    font-size: 5em;
+                    font-family: @font-family-3 !important;
+                    color: @w;
+                    font-weight: 700;
+                }
+                h3{
+                    color: @color4;
+                    text-shadow: none;
+                }
+                p{
+                    color: @color4;
+                }
+            }
+        }
+
+        .section-2{
+            h2{
+                font-family: @font-family-2 !important;
+                border-bottom: 1px dotted @color2;
+                margin-bottom: 40px;
+            }
+            ul{
+                margin-left: 60px;
+                li{
+                    padding: 4px;
+                    i{
+                        width: 30px;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+            .demo-box {
+                a{
+                    .demo-image{
+                        padding: 5px;
+                        .bg(@color3);
+
+                        img{
+                            width: 100%;
+                            opacity: 0.8;
+                            .transition(@transition-1);
+                        }
+
+                        &:hover>img{
+                            opacity: 1;
+                        }
+                    }
+                    .demo-text{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+//      Designing for Pre loader
+//_____________________________________________________
+
+        
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      z-index: 9999999;
+    }
+    #status {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      height: 30px;
+      top: 45%;
+      background-image: url('../../images/loader.gif');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+}
+
+
+
+//      Designing style switcher
+//____________________________________________________
+
+    .style-switch{
+        position: fixed;
+        right: -250px;
+        top: 100px;
+        z-index: 999;
+        width: 250px;
+        height: 500px;
+        border: 1px solid @gray;
+        .transition(@transition-2);
+
+        .style-choose{
+            .bg(@gray-light3);
+            .box-shadow(@shadow-outer-gray);
+            padding: 15px;
+            width: 250px;
+            height: 100%;
+            border: 3px solid @w;
+            position: relative;
+
+            h3{
+                .bg(@w);
+                padding: 5px;
+                margin-top: 10px;
+            }
+            ul{
+                
+                margin-top: 40px;
+
+                li{
+                    padding: 5px;
+                    .bg(@w-dark);
+                    margin-bottom: 5px;
+                    a{
+                        h4{
+                            margin-bottom: 0px;
+                        }
+                        .color-box{
+                            display: block;
+                            margin-right: 10px !important;
+                            width: 30px !important;
+                            height: 30px !important;
+                        }
+                        .defaultblue{
+                            .bg(#41A0B1);
+                        }
+                        .gray{
+                            .bg(#7A7A7A);
+                        }
+                        .red{
+                            .bg(#883A3A);
+                        }
+                        .yellow{
+                            .bg(#AC9220);
+                        }
+                        .brown{
+                            .bg(#7D7353);
+                        }
+                        .black{
+                            .bg(#646464);
+                        }
+                        .everningyellow{
+                            .bg(#877016);
+                        }
+                        .blue{
+                            .bg(#2C949F);
+                        }                            
+
+                        h4{
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+        //      style switcher show and hide box
+        //____________________________________________________
+
+        .style-show{
+            position: absolute;
+            left: -50px;
+            top: 17%;
+            width: 50px;
+            height: 50px;
+            text-align: center !important;
+            font-size: 24px !important;
+            color: #555;
+            margin-top: -25px;
+            border: 1px solid #ccc;
+            z-index: -1;
+            .bg(@w);
+            -webkit-border-radius: 4px 0 0 4px;
+
+            &:hover{
+                color: #aaa;
+            }
+
+        }
+        .fa{
+            margin: 0 !important;
+            line-height: 51px !important;
+        }
+    }
+    .show-themes{
+        right: 0px !important;
+        display: block;
+    }     
+
+
+
+
+//      Media Query
+//____________________________________________________
+
+//  Media query for lg size devices
+@media screen and (min-width: 1200px){
+
+    .header{
+        .header-text{
+            padding: 40px !important;
+        }
+        .head-bar{
+            .header-top{
+                .header-left{
+                    .logo{
+                        width: 180px !important;
+                        height: auto;
+                    }
+                }                
+                .header-right{
+                    padding-right: 7% !important;
+                }
+            }            
+        }
+
+        .header-text{
+            h1{
+                margin: 22% 0 2% 20% !important;
+            }
+            h3{
+                margin-bottom: 60px !important;
+            }
+            a{
+                
+            }
+        }
+    }
+
+    .window-laptop{
+        position: relative;
+
+        figure{
+            display: block;
+            height: 660px !important;
+
+            .roll{
+                .bg(@w);
+                position: absolute;
+                z-index: 100 !important;
+                padding: 0px 30px !important;                                           
+                overflow: scroll;
+                height: 552px !important;
+                top: 10px;
+                border-radius: 5px;
+                margin: 65px 137px 60px 155px !important;
+
+                .product-slider{
+
+                    .product-page-1{
+                        .bg(@w);
+                    }
+                    .product-page-2{
+                        .bg(@gray-light4);
+                    }
+                    .product-page-3{
+                        .bg(@w);
+                    }
+                    .product-page-4{
+                        .bg(@gray-light4);
+                    }
+                }
+            }
+
+            .window-laptop-img{
+                position: absolute;
+                top: 18px;
+            }                    
+        }
+    }
+
+    .section-clients{
+        .clients-list{
+            img{
+                width: 200px !important;
+            }
+        }
+    }
+
+    .section-about{
+        .about-section1{
+            .left{
+                h2, h4, p{
+                    margin-left: 20%;
+                }
+            }
+        }
+    }   
+}
+
+
+//  Media query for md size devices
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+
+    .header{
+        font-size: 80%;
+
+        .header-text{
+            .header-button{
+                font-size: 16px !important;
+                padding: 10px 30px !important;
+                
+            }
+        }
+
+        .head-bar{
+            .header-top{
+                .header-right{
+
+                    ul{
+                        li{
+                            height: 43px !important;
+                            width: 43px !important;
+                            padding-top: 5%;                            
+
+                            a{
+                                i{
+                                    font-size: 1.6em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//  Media query for sm size devices
+@media screen and (max-width: 992px) and (min-width: 767px) {}
+
+
+//  Media query for xs size devices
+@media screen and (max-width: 768px) {
+
+    .container{padding: 0!important;}
+    .about-section1{
+        h2{
+            font-size: 3em !important;
+        }
+    }
+
+    .section-head{
+        .navbar{
+            position: static !important;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .about-section2{
+        h2{
+            font-size: 4em !important;
+        }
+    }
+
+    .h2-light, .h2-dark{
+        font-size: 2em;
+
+        small{
+            font-size: 0.65em !important;
+        }
+    }
+
+    .section-tabs{
+        #section-1, #section-3{
+            p{
+                width: 100% !important;
+                margin: 0 !important;
+            }
+        }
+    }
+
+    .section-clients{
+        .clients-list{
+            img{
+                width: 100% !important;
+            }
+        }
+    }
+
+    .section-testimonial{
+         h3{
+            width: 100% !important;
+            margin: 0 !important;
+         }
+     }
+
+     .section-team{
+        .right{
+            padding: 20px !important;
+
+            blockquote{
+                margin: 0 !important;
+            }
+        }
+     }
+
+    .section-testimonial{
+        .item{
+            img{
+                margin: 10px 0 20px 30% !important;
+                width: 40% !important;
+            }
+        }
+    }
+
+    .section-tabs{
+        .content{
+            width: 100% !important;
+            margin-left: 0 !important;
+        }
+    }
+
+    .section-product{
+    }
+}

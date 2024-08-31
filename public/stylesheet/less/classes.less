@@ -1,0 +1,286 @@
+//
+//      Theme Pixel Alexa
+//      Designed by PixelCoders
+//      Theme Pixel Alexa - Version 1.1 (2014)
+//______________________________________________________________
+
+
+
+//      classes and constant globle variables
+//__________________________________________________________________________
+
+@import "variables";
+@import "mixins";
+
+
+//  global Font declarations
+
+h1{
+    .font(@font-size-logo, @font-line-height-logo, @font-family-logo);
+    color: @color2;
+    margin: 0px;
+}
+h2{
+    .font(@font-size-h2, @font-line-height-h2, @font-family-h2);
+    color: @color2;
+    margin: 0px;
+    font-weight: 100;
+    text-shadow: 0px 1px 1px @gray-light4;
+}
+h3{
+    .font(@font-size-h3, @font-line-height-h3, @font-family-h3);
+    color: @color2;
+    text-shadow: 0px 1px 1px @gray-light4;
+}
+h4{
+    color: @color2;
+}
+
+p{
+    .font(@font-size-p, @font-line-height-p, @font-family-p);
+    color: @color3;
+    padding-bottom: 10px;
+    font-weight: 100;
+}
+input, textarea, button{
+    .font(@font-size-p, @font-line-height-p, @font-family-p);
+}
+li{
+    .font(@font-size-p, @font-line-height-p, @font-family-p);
+}
+
+
+//  Default Definations
+
+a{color: @b;text-decoration: none;}
+a:hover{color: @gray-dark1; background-color: @t; text-decoration: none;}
+a:active{color: @w !important; background-color: @color-trans-dark !important; text-decoration: none;}
+::selection{background: #222;color:#FFF;}
+::-moz-selection{background: #222;color:#FFF;}
+::-webkit-scrollbar-corner{background:transparent;display:none}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:@w;border-radius:30px}
+::-webkit-scrollbar-thumb{border-radius:30px;background:@color3;-webkit-box-shadow:none}
+
+
+
+//      HTML classes
+//_____________________________________________
+
+
+//  Designed Classes
+
+.hide{visibility: hidden !important}
+.row{margin: 0px !important;}
+.container{}
+.page-header{border-color: @color-trans-dark;padding: 15px 30px;margin: 0 0 40px 0!important;}
+.active{color: @color !important;}
+blockquote{padding: 20px;margin: 20px;border-left: 3px solid @color;background-color:@gray-light5;small{color: @b;}}
+
+
+.btn{
+    .bg(@t);
+    color: @gray !important;
+    border-color: @gray;
+    border-radius: 3px;
+
+    i{
+        color: @color !important;
+    }
+
+    &:hover{
+        .bg(@color);
+        color: @w !important;
+        border-color: @color;
+    }
+
+    &:hover>i{
+        color: @w !important;
+    }    
+}
+
+.h2-light{
+    position: relative;
+    text-shadow: 1px 1px 2px @w;
+    line-height: 1em !important;
+    font-family: @font-family-2 !important;
+    margin-bottom: 40px !important;
+
+    small{
+        font-size: 0.55em !important;
+    }
+
+    span{
+        font-family: @font-family-3 !important;
+        font-weight: 600;
+    }    
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: 49%;
+        bottom: -20px;
+        margin-left: -25px;
+        width: 65px;
+        height: 2px;
+        .bg(@color);
+        .transition(@transition-3);
+    }
+}
+
+
+.h2-dark{
+    position: relative;
+    color: @w !important;
+    text-shadow: 1px 1px 2px @gray;
+    line-height: 1em !important;
+    font-family: @font-family-2 !important;
+
+    small{
+        color: @w !important;
+        font-size: 0.55em !important;
+        font-weight: 600;
+    }
+
+    span{
+        font-family: @font-family-3 !important;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: 49%;
+        bottom: -20px;
+        margin-left: -25px;
+        width: 65px;
+        height: 2px;
+        .bg(@w);
+        .transition(@transition-3);
+    }
+}
+
+
+//  Background colors
+
+.bg-theme{background-color: @color;}
+.bg-gray-1 {background-color: #f6f6f6;}
+.bg-gray-2{background-color: #eee;}
+.bg-gray-3{background-color: #ccc;}
+.bg-gray-4{background-color: #333;}
+.bg-1{background-color: #2d3e43;}
+.bg-2{background-color: #1E2633;}
+.bg-3{background-color: #717984;}
+
+//  Padding-Margin classes
+
+.p0{padding: 0 !important;}
+.p10{padding: 10px 0 !important;}
+.p20{padding: 20px 0 !important;}
+.p40{padding: 40px 0 !important;}
+.p60{padding: 60px 0 !important;}
+.p80{padding: 80px 0 !important;}
+.p100{padding: 100px 0 !important;}
+
+._p10{padding: 0 10px !important;}
+._p20{padding: 0 20px !important;}
+._p30{padding: 0 30px !important;}
+._p40{padding: 0 40px !important;}
+._p50{padding: 0 50px !important;}
+._p60{padding: 0 60px !important;}
+._p80{padding: 0 80px !important;}
+
+.m10{margin: 10px 0 !important;}
+.m20{margin: 20px 0 !important;}
+.m30{margin: 30px 0 !important;}
+.m40{margin: 40px 0 !important;}
+.m50{margin: 50px 0 !important;}
+.m60{margin: 60px 0 !important;}
+
+
+
+
+//               Delay classes
+//_____________________________________________
+
+.d0{
+    animation-delay:300ms;
+    -moz-animation-delay:300ms;
+    -webkit-animation-delay:300ms;    
+}
+.d1{
+    animation-delay:600ms;
+    -moz-animation-delay:600ms;
+    -webkit-animation-delay:600ms;    
+}
+.d2{
+    animation-delay:900ms;
+    -moz-animation-delay:900ms;
+    -webkit-animation-delay:900ms;    
+}
+.d3{
+    animation-delay:1200ms;
+    -moz-animation-delay:1200ms;
+    -webkit-animation-delay:1200ms;    
+}
+.d4{
+    animation-delay:1500ms;
+    -moz-animation-delay:1500ms;
+    -webkit-animation-delay:1500ms;    
+}
+.d5{
+    animation-delay:1800ms;
+    -moz-animation-delay:1800ms;
+    -webkit-animation-delay:1800ms;    
+}
+.d6{
+    animation-delay:2100ms;
+    -moz-animation-delay:2100ms;
+    -webkit-animation-delay:2100ms;    
+}
+.d7{
+    animation-delay:2400ms;
+    -moz-animation-delay:2400ms;
+    -webkit-animation-delay:2400ms;    
+}
+.d8{
+    animation-delay:2700ms;
+    -moz-animation-delay:2700ms;
+    -webkit-animation-delay:2700ms;    
+}
+.d9{
+    animation-delay:3000ms;
+    -moz-animation-delay:3000ms;
+    -webkit-animation-delay:3000ms;    
+}
+.d10{
+    animation-delay:3300ms;
+    -moz-animation-delay:3300ms;
+    -webkit-animation-delay:3300ms;    
+}
+.d11{
+    animation-delay:3600ms;
+    -moz-animation-delay:3600ms;
+    -webkit-animation-delay:3600ms;    
+}
+.d12{
+    animation-delay:3900ms;
+    -moz-animation-delay:3900ms;
+    -webkit-animation-delay:3900ms;    
+}
+.d13{
+    animation-delay:4200ms;
+    -moz-animation-delay:4200ms;
+    -webkit-animation-delay:4200ms;    
+}
+.d14{
+    animation-delay:4500ms;
+    -moz-animation-delay:4500ms;
+    -webkit-animation-delay:4500ms;    
+}
+.d15{
+    animation-delay:4800ms;
+    -moz-animation-delay:4800ms;
+    -webkit-animation-delay:4800ms;    
+}
+
+
